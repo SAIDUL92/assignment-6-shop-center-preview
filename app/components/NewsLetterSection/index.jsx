@@ -7,7 +7,7 @@ function NewsLetterSection() {
                     Get the inside scoop
                 </h1>
                 <p className="text-center text-sm lg:text-base">
-                    Sign up for new product drops, behind-the-scenes content, and monthly "5
+                    Sign up for new product drops, behind-the-scenes content, and monthly &quot5
                     Things I'm Digging" emails
                 </p>
                 <form action="#" className="mb-5">
