@@ -3,11 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import productData from '../../data/index.json';
 import CustomImage from "@/app/components/Image";
+
+
 function ProductDetailsPage({ params }) {
   const id = params.id;
   const product = productData.products.find(
     (product) => product.id === Number(id)
   );
+
+
 
 
   return (
@@ -25,7 +29,7 @@ function ProductDetailsPage({ params }) {
             />
             <div className="flex gap-4 mt-4">
               {
-                product.images.map((singleImage, index) => {
+                product.images.slice(0, 4).map((singleImage, index) => {
                   return <CustomImage key={index} imageUrl={singleImage} />
                 }
                 )
@@ -59,7 +63,7 @@ function ProductDetailsPage({ params }) {
           </div>
         </div>
       </section>
-    </main>
+    </main >
   );
 }
 
