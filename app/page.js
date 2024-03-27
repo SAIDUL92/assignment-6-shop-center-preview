@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import NewsLetterSection from "./components/NewsLetterSection";
 import ProductCard from "./components/ProductCard";
@@ -21,6 +22,7 @@ export default function Home() {
           </section>
           {/* Product section start */}
           <NewsLetterSection />
+          <Footer />
         </>
       </main>
     </>

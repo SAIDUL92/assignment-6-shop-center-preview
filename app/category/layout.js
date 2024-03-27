@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import Footer from "../components/Footer";
 import NewsLetterSection from "../components/NewsLetterSection";
 import productData from '../data/index.json';
 import { getUniqueCategories } from "../utils";
@@ -30,7 +31,7 @@ export default function RootLayout({ children }) {
         </section>
         <NewsLetterSection />
       </main>
-
+      <Footer />
     </>
 
   );
